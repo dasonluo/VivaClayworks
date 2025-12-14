@@ -1,0 +1,456 @@
+/* Design System */
+/* ---------------------------------------------------*/
+:root {
+  /* Colors */
+  --dark-brown: #2b190b;
+  --cream-white: #f8f0ec;
+  --terracotta: #e37448;
+  --blue-grey: #e4e5e6;
+
+  font-family: "Space Grotesk", Arial, sans-serif;
+
+  /* Spacing (Gaps) */
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-s: 12px;
+  --space-m: 16px;
+  --space-l: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+
+  /* Padding */
+  --padding-xs: 12px;
+  --padding-s: 24px;
+  --padding-m: 70px;
+  --padding-l: 150px;
+}
+
+/* Imported Fonts */
+/* ---------------------------------------------------*/
+/*Bold */
+@font-face {
+  font-family: "Recoletta";
+  src: url("https://raw.githubusercontent.com/dasonluo/VivaClayworks/main/Assets/Fonts/Recoleta%20Bold.otf")
+    format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/*Semibold */
+@font-face {
+  font-family: "Recoletta";
+  src: url("https://raw.githubusercontent.com/dasonluo/VivaClayworks/main/Assets/Fonts/Recoleta%20SemiBold.otf")
+    format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Medium */
+@font-face {
+  font-family: "Recoletta";
+  src: url("https://raw.githubusercontent.com/dasonluo/VivaClayworks/main/Assets/Fonts/Recoleta%20Medium.otf")
+    format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Font Styles */
+/* ---------------------------------------------------*/
+/* Recoletta Bold */
+h1 {
+  font-family: "Recoletta", serif;
+  font-size: clamp(2.5rem, calc(7vw + 1rem), 5.625rem);
+  font-weight: 800;
+  line-height: 100%;
+  color: var(--dark-brown);
+}
+
+/* Recoletta Semibold */
+h2 {
+  font-family: "Recoletta", serif;
+  font-size: clamp(2rem, calc(6vw + 1rem), 4.0625rem);
+  line-height: 110%;
+  font-weight: 600;
+  color: var(--dark-brown);
+}
+
+/* Lato Bold */
+h3 {
+  font-family: "Lato", sans-serif;
+  font-size: clamp(1.5rem, calc(5vw + 1rem), 1.65rem);
+  line-height: 120;
+  font-weight: 600;
+  color: var(--dark-brown);
+}
+
+/* Lato Bold */
+h4 {
+  font-family: "Lato", sans-serif;
+  font-size: clamp(1.3rem, calc(5vw + 1rem), 1.4375rem);
+  line-height: 130%;
+  font-weight: 600;
+  color: var(--dark-brown);
+}
+
+/* Large */
+.large {
+  font-family: "Lato", sans-serif;
+  font-size: 1.25rem;
+  line-height: normal;
+  font-weight: 400;
+  color: var(--dark-brown);
+}
+
+/* Regular */
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.125rem;
+  line-height: 140%;
+  font-weight: 400;
+  color: var(--dark-brown);
+}
+
+/* Semibold */
+.body-semibold {
+  font-family: "Lato", sans-serif;
+  font-size: 1.125rem;
+  line-height: 140%;
+  font-weight: 600;
+  color: var(--dark-brown);
+}
+
+/* Medium */
+.body-medium {
+  font-family: "Lato", sans-serif;
+  font-size: 1.125rem;
+  line-height: 140%;
+  font-weight: 500;
+  color: var(--dark-brown);
+}
+
+/* Small */
+.body-small {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--dark-brown);
+}
+
+.subscribe {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  line-height: 120%;
+  font-weight: 500;
+  color: var(--dark-brown);
+}
+
+/* Text Styles */
+/* ---------------------------------------------------*/
+.text-center {
+  text-align: center;
+}
+
+.no-bullets {
+  list-style-type: none;
+}
+
+/* Button Styles */
+/* ---------------------------------------------------*/
+a,
+button {
+  font-family: "Lato", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: var(--space-s) var(--space-m);
+  border-radius: 8px;
+  text-decoration: none;
+  border: none;
+  padding: 16px 24px;
+  display: inline-flex;
+  width: fit-content;
+}
+
+.a-primary,
+.button-primary {
+  background-color: var(--terracotta);
+  color: var(--dark-brown);
+}
+
+.a-secondary,
+.button-secondary {
+  background-color: var(--cream-white);
+  color: var(--dark-brown);
+}
+
+.a-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Background Colours */
+/* ---------------------------------------------------*/
+.bkg-white {
+  background-color: var(--cream-white);
+}
+.bkg-orange {
+  background-color: var(--terracotta);
+}
+
+.bkg-grey {
+  background-color: var(--blue-grey);
+}
+
+.bkg-brown {
+  background-color: var(--dark-brown);
+}
+
+.bkg-brown h2,
+.bkg-brown p {
+  color: var(--cream-white);
+}
+
+/* Image Styles */
+/* ---------------------------------------------------*/
+.img-wrapper {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------------------------------------------------*/
+/* ---------------------------------------------------*/
+/* Landscape */
+
+.img-16x9 {
+  aspect-ratio: 16/9;
+}
+
+.img-6x4 {
+  aspect-ratio: 6x4;
+}
+
+.img-5x4 {
+  aspect-ratio: 5/4;
+}
+
+.img-4x3 {
+  aspect-ratio: 4/3;
+}
+
+.img-3x2 {
+  aspect-ratio: 3x2;
+}
+
+/* ---------------------------------------------------*/
+/* ---------------------------------------------------*/
+/* Portrait */
+
+.img-9x16 {
+  aspect-ratio: 9/16;
+}
+
+.img-2x3 {
+  aspect-ratio: 2/3;
+}
+
+.img-3x4 {
+  aspect-ratio: 3/4;
+}
+
+.img-1x1 {
+  aspect-ratio: 1/1;
+}
+
+.img-4x5 {
+  aspect-ratio: 4/5;
+}
+
+.img-6x9 {
+  aspect-ratio: 6/9;
+}
+
+/* Custom Section Styles */
+/* ---------------------------------------------------*/
+
+/* Hero */
+.hero {
+  padding-bottom: 90px;
+}
+
+/* Split Image */
+.side-by-side .img-wrapper {
+  border-radius: 0;
+}
+
+/* ---------------------------------------------------*/
+/* ---------------------------------------------------*/
+/* Carousel */
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-group {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+  animation: spin 80s infinite linear;
+  padding-right: 20px;
+}
+
+.carousel-card {
+  width: 250px;
+}
+
+@keyframes spin {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: -100%;
+  }
+}
+
+/* ---------------------------------------------------*/
+/* ---------------------------------------------------*/
+/* Navigation */
+
+nav > hr {
+  border: 0.5px solid var(--dark-brown);
+}
+
+/* Image Gallery */
+.item {
+  background-color: darkgrey;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.nav-logo {
+  padding: 0;
+}
+
+/* ---------------------------------------------------*/
+/* ---------------------------------------------------*/
+/* Image Gallery */
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(4 minmax(150px, 1fr));
+
+  grid-template-areas:
+    "img-1 img-2 img-2 img-3"
+    "img-4 img-4 img-4 img-5"
+    "img-4 img-4 img-4 img-5"
+    "img-6 img-7 img-7 img-7"
+    "img-6 img-7 img-7 img-7"
+    "img-8 img-8 img-9 img-9"
+    "img-10 img-10 img-9 img-9";
+  gap: 1rem;
+}
+
+.gallery-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+/* ---------------------------------------------------*/
+/* ---------------------------------------------------*/
+/* Testimonials */
+
+.testimonial-card {
+  padding: var(--padding-s);
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+/* ---------------------------------------------------*/
+/* ---------------------------------------------------*/
+/* Footer */
+
+.footer-logo {
+  width: 100%;
+}
+
+footer .container-full {
+  margin-top: 7rem;
+}
+footer {
+  padding-top: var(--padding-m);
+}
+
+/* ---------------------------------------------------*/
+/* ---------------------------------------------------*/
+/* Forms */
+
+.input-field {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  width: 100%;
+  border: none;
+  padding: 16px 16px;
+  border-radius: 8px;
+  background-color: var(--cream-white);
+  box-sizing: border-box;
+}
+
+.input-field::placeholder {
+  color: #7e7e7e;
+}
+
+/* Contact form */
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.contact-form input[name="firstNmae"],
+.contact-form input[name="lastName"] {
+  grid-column: span 1;
+}
+
+.contact-form input[name="email"] {
+  grid-column: span 2;
+}
+
+.contact-form input[name="message"] {
+  grid-column: span 2;
+  min-height: 200px;
+}
+
+/* ---------------------------------------------------*/
+/* ---------------------------------------------------*/
+/* Map */
+
+.map {
+  margin-top: 2rem;
+}
+
+/* ---------------------------------------------------*/
+/* ---------------------------------------------------*/
+/* Collections */
+
+.collection {
+  margin: -12px;
+}
+
+.collection > .col {
+  padding: 12px;
+}

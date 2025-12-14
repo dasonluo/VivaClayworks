@@ -1,0 +1,317 @@
+/* Container */
+/* ---------------------------------------------------*/
+.container {
+  display: block;
+  width: 86%;
+  max-width: 1400px;
+  margin: 0px auto;
+}
+
+.container-full {
+  width: 100%;
+}
+
+/* Column */
+/* ---------------------------------------------------*/
+.col {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.col-lg-1 {
+  max-width: 8.33%;
+}
+
+.col-lg-2 {
+  max-width: 16.67%;
+}
+
+.col-lg-3 {
+  max-width: 25%;
+}
+
+.col-lg-4 {
+  max-width: 33.33%;
+}
+
+.col-lg-5 {
+  max-width: 41.67%;
+}
+
+.col-lg-6 {
+  max-width: 50%;
+}
+
+.col-lg-7 {
+  max-width: 58.33%;
+}
+
+.col-lg-8 {
+  max-width: 66.67%;
+}
+
+.col-lg-9 {
+  max-width: 75%;
+}
+
+.col-lg-10 {
+  max-width: 83.33%;
+}
+
+.col-lg-11 {
+  max-width: 91.67%;
+}
+
+.col-lg-12 {
+  max-width: 100%;
+}
+
+/* Row */
+/* ---------------------------------------------------*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  box-sizing: border-box;
+}
+
+/* Positioning */
+.position-relative {
+  position: relative;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/* Padding */
+/* ---------------------------------------------------*/
+.p-xs {
+  padding-top: var(--padding-xs);
+  padding-bottom: var(--padding-xs);
+}
+
+.p-s {
+  padding-top: var(--padding-s);
+  padding-bottom: var(--padding-s);
+}
+
+.p-m {
+  padding-top: var(--padding-m);
+  padding-bottom: var(--padding-m);
+}
+
+.p-l {
+  padding-top: var(--padding-l);
+  padding-bottom: var(--padding-l);
+}
+
+/* Gap */
+.g-2xs {
+  gap: var(--space-2xs);
+}
+
+.g-xs {
+  gap: var(--space-xs);
+}
+
+.g-s {
+  gap: var(--space-s);
+}
+
+.g-m {
+  gap: var(--space-m);
+}
+
+.g-l {
+  gap: var(--space-l);
+}
+
+.g-xl {
+  gap: var(--space-xl);
+}
+
+.g-2xl {
+  gap: var(--space-2xl);
+}
+
+.g-3xl {
+  gap: var(--space-3xl);
+}
+
+.g-col {
+  gap: 40px;
+}
+
+/* Media Queries */
+/* ---------------------------------------------------*/
+
+/* Mobile */
+
+@media (max-width: 480px) {
+  /* Column Grid */
+  .col-sm-1 {
+    min-width: 8.33%;
+    max-width: 8.33%;
+  }
+
+  .col-sm-2 {
+    min-width: 16.67%;
+    max-width: 16.67%;
+  }
+
+  .col-sm-3 {
+    min-width: 25%;
+    max-width: 25%;
+  }
+
+  .col-sm-4 {
+    min-width: 33.33%;
+    max-width: 33.33%;
+  }
+
+  .col-sm-5 {
+    min-width: 41.67%;
+    max-width: 41.67%;
+  }
+
+  .col-sm-6 {
+    min-width: 50%;
+    max-width: 50%;
+  }
+
+  .col-sm-7 {
+    min-width: 58.33%;
+    max-width: 58.33%;
+  }
+
+  .col-sm-8 {
+    min-width: 66.67%;
+    max-width: 66.67%;
+  }
+
+  .col-sm-9 {
+    min-width: 75%;
+    max-width: 75%;
+  }
+
+  .col-sm-10 {
+    min-width: 83.33%;
+    max-width: 83.33%;
+  }
+
+  .col-sm-11 {
+    min-width: 91.67%;
+    max-width: 91.67%;
+  }
+
+  .col-sm-12 {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  /* Horizontal to Centered Layouts */
+  .center-mobile {
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Buttons */
+  a,
+  button:not(footer button) {
+    align-self: center;
+  }
+
+  /* Navigation */
+  .hide {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  /* Padding */
+  :root {
+    --padding-m: 50px;
+    --padding-l: 100px;
+  }
+
+  /* Hero */
+  .hero-img {
+    aspect-ratio: 4/5;
+  }
+
+  /* Image Gallery */
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3 minmax(150px, 1fr));
+
+    grid-template-areas:
+      "img-1 img-2 img-2"
+      "img-3 img-3 img-3"
+      "img-4 img-4 img-5"
+      "img-6 img-7 img-7"
+      "img-6 img-7 img-7"
+      "img-8 img-8 img-8"
+      "img-8 img-8 img-8"
+      "img-9 img-10 img-10";
+    gap: 1rem;
+  }
+}
+
+/* ---------------------------------------------------*/
+/* ---------------------------------------------------*/
+/* Tablet */
+
+@media (max-width: 768px) and (min-width: 481px) {
+  /* Navigation */
+  .hide {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+}
+
+/* ---------------------------------------------------*/
+/* ---------------------------------------------------*/
+/* Laptop */
+
+@media (max-width: 1279px) and (min-width: 769px) {
+  nav > div {
+    flex-direction: column;
+  }
+
+  .nav-list {
+    width: 100%;
+  }
+}
